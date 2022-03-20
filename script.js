@@ -1,8 +1,8 @@
 let xhr=new XMLHttpRequest();
 let source="bbc-news";
-let key="3be891350fc243a1acbffed40e29b22b";
+let key="8952518ec8dcf486ee36a410a60abca0";
 let place=document.getElementById("accordionExample");
-xhr.open('GET',`https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${key}`,true);
+xhr.open('GET',`https://gnews.io/api/v4/search?q=in&country=in&token=${key}`,true);
 
 xhr.onload = function(){
     if(this.status===200){
